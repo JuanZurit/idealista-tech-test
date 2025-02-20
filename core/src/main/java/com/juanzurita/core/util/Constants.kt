@@ -11,4 +11,12 @@ object Constants {
             const val BOTTOM_RIGHT: Int = 6
         }
     }
+
+
+    interface Arguments{
+        companion object{
+            const val IS_FAVORITE = "isFavorite"
+        }
+
+    }
 }

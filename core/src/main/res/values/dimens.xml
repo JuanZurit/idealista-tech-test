@@ -12,4 +12,21 @@
     <dimen name="elevation_m">6dp</dimen>
     <dimen name="elevation_l">12dp</dimen>
 
+    <!-- Espaciados y márgenes -->
+    <dimen name="margin_xxs">2dp</dimen>   <!-- Extra Extra Small -->
+    <dimen name="margin_xs">4dp</dimen>    <!-- Extra Small -->
+    <dimen name="margin_sm">6dp</dimen>    <!-- Small -->
+    <dimen name="margin_md">8dp</dimen>    <!-- Medium -->
+    <dimen name="margin_base">10dp</dimen> <!-- Base/Default -->
+    <dimen name="margin_lg">12dp</dimen>   <!-- Large -->
+    <dimen name="margin_xl">14dp</dimen>   <!-- Extra Large -->
+    <dimen name="margin_2xl">16dp</dimen>  <!-- 2X Large -->
+    <dimen name="margin_3xl">18dp</dimen>  <!-- 3X Large -->
+    <dimen name="margin_4xl">20dp</dimen>  <!-- 4X Large -->
+    <dimen name="margin_5xl">24dp</dimen>  <!-- 5X Large -->
+    <dimen name="margin_6xl">28dp</dimen>  <!-- 6X Large -->
+    <dimen name="margin_7xl">32dp</dimen>  <!-- 7X Large -->
+    <dimen name="margin_8xl">36dp</dimen>  <!-- 8X Large -->
+    <dimen name="margin_9xl">40dp</dimen>  <!-- 9X Large -->
+
 </resources>
