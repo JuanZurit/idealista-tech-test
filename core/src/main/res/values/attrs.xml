@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ShapeAppearance -->
+    <attr name="shapeAppearanceNone" format="reference" />
+    <attr name="shapeAppearanceSmallComponentTop" format="reference" />
+    <attr name="shapeAppearanceSmallComponentBottom" format="reference" />
+    <attr name="shapeAppearanceSmallComponentBottomLeft" format="reference" />
+    <attr name="shapeAppearanceSmallComponentBottomRight" format="reference" />
+    <attr name="shapeAppearanceMediumComponentBottomLeft" format="reference" />
+    <attr name="shapeAppearanceMediumComponentBottomRight" format="reference" />
+    <attr name="shapeAppearanceMediumComponentTop" format="reference" />
+    <attr name="shapeAppearanceMediumComponentBottom" format="reference" />
+    <attr name="shapeAppearanceLargeComponentTop" format="reference" />
+    <attr name="shapeAppearanceLargeComponentBottom" format="reference" />
+
+    <!--Colors-->
+    <attr name="backgroundCardColor" format="color" />
+    <!-- Elevation -->
+    <attr name="elevationSmall" format="dimension" />
+    <attr name="elevationMedium" format="dimension" />
+    <attr name="elevationLarge" format="dimension" />
+</resources>

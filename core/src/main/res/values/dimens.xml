@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ShapeAppearance Dimensions -->
+    <dimen name="shape_appearance_none">0dp</dimen>
+    <dimen name="shape_appearance_s">4dp</dimen>
+    <dimen name="shape_appearance_m">8dp</dimen>
+    <dimen name="shape_appearance_l">24dp</dimen>
+
+    <!-- Elevation Dimensions -->
+    <dimen name="elevation_s">4dp</dimen>
+    <dimen name="elevation_m">6dp</dimen>
+    <dimen name="elevation_l">12dp</dimen>
+
+</resources>

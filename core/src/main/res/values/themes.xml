@@ -26,6 +26,52 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
 
         <item name="android:navigationBarColor">@color/primaryColor</item>
+
+        <!-- Elevation -->
+        <item name="elevationSmall">@dimen/elevation_s</item>
+        <item name="elevationMedium">@dimen/elevation_m</item>
+        <item name="elevationLarge">@dimen/elevation_l</item>
+
+        <!-- Shape Appearance -->
+        <item name="shapeAppearanceNone">@style/ShapeAppearance.None</item>
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Small.Full
+        </item>
+        <item name="shapeAppearanceSmallComponentTop">@style/ShapeAppearance.Small.Top
+        </item>
+
+        <item name="shapeAppearanceSmallComponentBottom">
+            @style/ShapeAppearance.Small.Bottom
+        </item>
+
+        <item name="shapeAppearanceSmallComponentBottomLeft">
+            @style/ShapeAppearance.Small.Bottom.Left
+        </item>
+        <item name="shapeAppearanceSmallComponentBottomRight">
+            @style/ShapeAppearance.Small.Bottom.Right
+        </item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Medium.Full
+        </item>
+        <item name="shapeAppearanceMediumComponentTop">
+            @style/ShapeAppearance.Medium.Top
+        </item>
+        <item name="shapeAppearanceMediumComponentBottom">
+            @style/ShapeAppearance.Medium.Bottom
+        </item>
+        <item name="shapeAppearanceMediumComponentBottomLeft">
+            @style/ShapeAppearance.Medium.Bottom.Left
+        </item>
+        <item name="shapeAppearanceMediumComponentBottomRight">
+            @style/ShapeAppearance.Medium.Bottom.Right
+        </item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Large.Full
+        </item>
+        <item name="shapeAppearanceLargeComponentTop">@style/ShapeAppearance.Large.Top
+        </item>
+        <item name="shapeAppearanceLargeComponentBottom">
+            @style/ShapeAppearance.Large.Bottom
+        </item>
+
+
     </style>
 
 
