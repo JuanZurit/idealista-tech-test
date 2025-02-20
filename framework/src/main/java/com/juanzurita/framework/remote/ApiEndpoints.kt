@@ -1,19 +1,16 @@
 package com.juanzurita.framework.remote
 
+import com.juanzurita.framework.remote.ads.models.AdItemNetwork
 import retrofit2.http.GET
-import retrofit2.http.Query
-import retrofit2.http.QueryMap
 
 
 interface ApiEndpoints {
     companion object {
-        private const val API_PATH = "/scripts/api/"
-        private const val API_FILE = "api.php?"
-        private const val API_DOMAIN_CONTROLLER: String = API_PATH + API_FILE
+
+        private const val API_DOMAIN_CONTROLLER: String = "/android-challenge/"
     }
 
-    /*@GET(API_DOMAIN_CONTROLLER)
-    suspend fun fetchMatchesDays(*/
-
+    @GET(API_DOMAIN_CONTROLLER+ApiConstants.Paths.AD_LIST)
+    suspend fun fetchAdList():List<AdItemNetwork>
 
 }
