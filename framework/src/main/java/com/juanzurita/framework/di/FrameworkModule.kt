@@ -4,6 +4,7 @@ import android.content.Context
 import com.juanzurita.core.framework.datastore.SettingsPreferencesDatasource
 import com.juanzurita.core.framework.managers.DefaultDispatcherProvider
 import com.juanzurita.core.framework.managers.DispatcherProvider
+import com.juanzurita.framework.BuildConfig
 import com.juanzurita.framework.remote.ApiConstants
 import com.juanzurita.framework.remote.ApiEndpoints
 import com.squareup.moshi.Moshi
@@ -33,7 +34,7 @@ class FrameworkModule {
     @Provides
     @Singleton
     fun provideOkHttpClient(): OkHttpClient = HttpLoggingInterceptor().run {
-       // if (BuildConfig.DEBUG) level = HttpLoggingInterceptor.Level.BODY
+        if (BuildConfig.DEBUG) level = HttpLoggingInterceptor.Level.BODY
         OkHttpClient.Builder().addInterceptor(this).build()
     }
 
@@ -48,7 +49,7 @@ class FrameworkModule {
     @Singleton
     @Provides
     fun provideApiInstance(okHttpClient: OkHttpClient, moshi: Moshi): ApiEndpoints {
-        val baseUrl =""
+        val baseUrl =ApiConstants.BaseUrl.DEBUG
             //if (BuildConfig.DEBUG) ApiConstants.BaseUrl.DEBUG else ApiConstants.BaseUrl.PRODUCTION
         return Retrofit.Builder()
             .baseUrl(baseUrl)
@@ -61,14 +62,6 @@ class FrameworkModule {
     @Singleton
     @Provides
     fun provideDispatcherProvider(): DispatcherProvider = DefaultDispatcherProvider()
-
-    @Provides
-    @Singleton
-    fun provideBaseApiParams() = LinkedHashMap<String, String>().apply {
-        put(ApiConstants.Params.KEY, ApiConstants.API_KEY)
-        put(ApiConstants.Params.FORMAT, ApiConstants.API_FORMAT)
-        put(ApiConstants.Params.DEVICE_NAME, ApiConstants.DEVICE)
-    }
 
     /*
     @Provides
