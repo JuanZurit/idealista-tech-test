@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home"
+        android:id="@+id/nav_home"
         android:enabled="true"
-        android:icon="@drawable/ic_home"
+        android:title="Inicio"
+        android:icon="@drawable/ic_home_selector"
        />
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/nav_favorite"
         android:enabled="true"
-        android:icon="@drawable/ic_favorite" />
+        android:title="Favoritos"
+        android:icon="@drawable/ic_favorite_selector" />
 
 </menu>
