@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base ShapeAppearance -->
+    <style name="ShapeAppearance.Base" parent="">
+        <item name="cornerFamily">rounded</item>
+    </style>
+
+    <!-- Styles -->
+    <style name="ShapeAppearance.None" parent="ShapeAppearance.Base">
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Small.Full" parent="ShapeAppearance.Base">
+        <item name="cornerSize">@dimen/shape_appearance_s</item>
+    </style>
+
+    <style name="ShapeAppearance.Small.Top" parent="ShapeAppearance.Base">
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_s</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_s</item>
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Small.Bottom" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_s</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_s</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Small.Bottom.Left" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_s</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Small.Bottom.Right" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_s</item>
+    </style>
+
+    <style name="ShapeAppearance.Medium.Full" parent="ShapeAppearance.Base">
+        <item name="cornerSize">@dimen/shape_appearance_m</item>
+    </style>
+
+    <style name="ShapeAppearance.Medium.Top" parent="ShapeAppearance.Base">
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_m</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_m</item>
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+
+    </style>
+
+    <style name="ShapeAppearance.Medium.Bottom" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_m</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_m</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Medium.Bottom.Left" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_m</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Medium.Bottom.Right" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_m</item>
+    </style>
+
+    <style name="ShapeAppearance.Large.Full" parent="ShapeAppearance.Base">
+        <item name="cornerSize">@dimen/shape_appearance_l</item>
+    </style>
+
+    <style name="ShapeAppearance.Large.Top" parent="ShapeAppearance.Base">
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_l</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_l</item>
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_none</item>
+    </style>
+
+    <style name="ShapeAppearance.Large.Bottom" parent="ShapeAppearance.Base">
+        <item name="cornerSizeBottomLeft">@dimen/shape_appearance_l</item>
+        <item name="cornerSizeBottomRight">@dimen/shape_appearance_l</item>
+        <item name="cornerSizeTopLeft">@dimen/shape_appearance_none</item>
+        <item name="cornerSizeTopRight">@dimen/shape_appearance_none</item>
+    </style>
+
+</resources>

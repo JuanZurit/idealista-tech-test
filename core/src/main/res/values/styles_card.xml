@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base CardView -->
+    <style name="Widget.Besoccer.CardView.Base" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceNone</item>
+        <item name="cardBackgroundColor">?backgroundCardColor</item>
+
+    </style>
+
+    <!-- Styles -->
+    <style name="Widget.Besoccer.CardView.Full" parent="Widget.Besoccer.CardView.Base">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponent</item>
+    </style>
+
+    <style name="Widget.Besoccer.CardView.Top" parent="Widget.Besoccer.CardView.Base">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentTop</item>
+    </style>
+
+    <style name="Widget.Besoccer.CardView.Bottom" parent="Widget.Besoccer.CardView.Base">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
+        <item name="cardElevation">?elevationSmall</item>
+    </style>
+
+    <style name="Widget.Besoccer.CardView.Bottom.Left" parent="Widget.Besoccer.CardView.Base">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
+        <item name="cardElevation">?elevationSmall</item>
+    </style>
+
+    <style name="Widget.Besoccer.CardView.Bottom.Right" parent="Widget.Besoccer.CardView.Base">
+        <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
+        <item name="cardElevation">?elevationSmall</item>
+    </style>
+
+    <style name="Widget.Besoccer.CardView.None" parent="Widget.Besoccer.CardView.Base" />
+
+</resources>
