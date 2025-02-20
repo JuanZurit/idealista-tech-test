@@ -29,12 +29,16 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     //hilt
-    implementation(libs.hilt.android)
+    api(libs.hilt.android)
+    api(libs.androidx.viewbinding)
     ksp(libs.hilt.android.compiler)
     ksp(libs.hilt.compiler)
+    // Retrofit
+    implementation(libs.retrofit)
     // DataStore
     implementation(libs.data.store)
-
+    // Arrow
+    api(libs.arrow)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
