@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Estilo para la ActionBar -->
+    <style name="ThemeOverlay.IdealistaTechTest.ActionBar" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/surfaceColor</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+    </style>
+
+    <!-- Estilo de texto para los títulos en la ActionBar -->
+    <style name="ActionBarTitle">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Estilo para los botones de la aplicación -->
+    <style name="Widget.IdealistaTechTest.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@color/primaryColor</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo para los FloatingActionButtons (FAB) -->
+    <style name="Widget.IdealistaTechTest.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="android:background">@color/primaryColor</item>
+    </style>
+
+    <!-- Estilo de texto para los títulos -->
+    <style name="TextAppearance.IdealistaTechTest.Title" parent="TextAppearance.Material3.HeadlineLarge">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- Estilo de texto para subtítulos -->
+    <style name="TextAppearance.IdealistaTechTest.Subtitle" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Estilo de texto para el cuerpo del texto -->
+    <style name="TextAppearance.IdealistaTechTest.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo de texto para textos secundarios -->
+    <style name="TextAppearance.IdealistaTechTest.Secondary" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

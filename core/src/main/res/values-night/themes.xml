@@ -1,0 +1,37 @@
+<resources>
+    <!-- Base application theme con Material 3 para tema oscuro -->
+    <style name="Base.Theme.IdealistaTechTest" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Personalizaciones para el tema oscuro -->
+        <item name="colorPrimary">@color/primaryColorDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/primaryColorDark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+
+        <item name="colorSecondary">@color/secondaryColorDark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/secondaryColorDark</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        <!-- Colores de fondo y texto en modo oscuro -->
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/greyLight</item>
+
+        <!-- Barra de estado transparente en modo oscuro -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <!-- Barra de navegación y otros elementos en modo oscuro -->
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:navigationBarDividerColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Tema específico para la aplicación en modo oscuro -->
+    <style name="Theme.IdealistaTechTest" parent="Base.Theme.IdealistaTechTest">
+        <!-- Personalizaciones adicionales para el tema oscuro -->
+    </style>
+
+    <!-- Tema para la Splash Screen en modo oscuro -->
+    <style name="Theme.MyApp.Splash" parent="Theme.IdealistaTechTest">
+        <item name="android:windowBackground">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para el modo oscuro -->
+    <color name="primaryColor">#121212</color> <!-- Color oscuro para el fondo -->
+    <color name="primaryColorLight">#333333</color> <!-- Un tono más claro para los fondos secundarios -->
+    <color name="primaryColorDark">#757575</color> <!-- Color para los elementos oscuros -->
+    <color name="secondaryColor">#424242</color>
+    <color name="secondaryColorLight">#616161</color>
+    <color name="secondaryColorDark">#9E9E9E</color>
+    <color name="greyLight">#BDBDBD</color>
+    <color name="backgroundColor">#121212</color> <!-- Fondo oscuro -->
+    <color name="surfaceColor">#333333</color> <!-- Fondo para elementos secundarios -->
+    <color name="primaryTextColor">#FFFFFF</color> <!-- Texto principal, blanco -->
+    <color name="secondaryTextColor">#BDBDBD</color> <!-- Texto secundario, gris claro -->
+    <!-- Colores para contenedores -->
+    <color name="onPrimaryColor">#FFFFFF</color> <!-- Texto sobre el color primario, blanco -->
+    <color name="onSecondaryColor">#FFFFFF</color> <!-- Texto sobre el color secundario, blanco -->
+    <color name="onPrimaryContainer">#FFFFFF</color> <!-- Texto sobre el contenedor primario -->
+    <color name="onSecondaryContainer">#FFFFFF</color> <!-- Texto sobre el contenedor secundario -->
+
+    <!-- Colores de elementos en modo oscuro -->
+    <color name="onSurface">#FFFFFF</color> <!-- Texto sobre los elementos 'surface' -->
+    <color name="onSurfaceVariant">#BDBDBD</color> <!-- Texto sobre elementos 'surfaceVariant' -->
+
+    <color name="surfaceContainerColor">#424242</color> <!-- Fondo para contenedores secundarios -->
+
+</resources>

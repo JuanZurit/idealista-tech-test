@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colores para el modo claro -->
+    <color name="primaryColor">#FFFFFF</color>
+    <color name="primaryColorLight">#F5F5F5</color>
+    <color name="primaryColorDark">#BDBDBD</color> <!-- Para el modo oscuro, puedes usar un tono más oscuro -->
+    <color name="secondaryColor">#E0E0E0</color>
+    <color name="secondaryColorLight">#BDBDBD</color>
+    <color name="secondaryColorDark">#9E9E9E</color> <!-- Para el modo oscuro, puedes usar un tono más oscuro -->
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="primaryTextColor">#212121</color> <!-- Texto principal, negro -->
+    <color name="secondaryTextColor">#757575</color> <!-- Texto secundario, gris -->
+
+    <!-- Colores para contenedores -->
+    <color name="onPrimaryColor">#212121</color> <!-- Texto sobre el color primario, negro -->
+    <color name="onSecondaryColor">#212121</color> <!-- Texto sobre el color secundario, negro -->
+    <color name="onPrimaryContainer">#212121</color> <!-- Texto sobre el contenedor primario -->
+    <color name="onSecondaryContainer">#212121</color>
+
+    <!-- Colores de elementos en modo claro -->
+    <color name="onSurface">#212121</color> <!-- Texto sobre los elementos 'surface' -->
+    <color name="onSurfaceVariant">#757575</color> <!-- Texto sobre elementos 'surfaceVariant' -->
+
+    <color name="surfaceContainerColor">#F5F5F5</color> <!-- Fondo para contenedores secundarios -->
+
+</resources>
