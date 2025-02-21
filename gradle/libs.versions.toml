@@ -21,6 +21,10 @@ arrowVersion = "1.1.6-alpha.53"
 roomVersion = "2.6.1"
 navigationVersion = "2.8.7"
 viewbinding = "8.8.1"
+glideVersion = "4.16.0"
+lifecycleRuntimeAndroid = "2.8.7"
+gsonVersion = "2.11.0"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -40,6 +44,7 @@ hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltV
 hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltVersion" }
 hilt-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "androidxHilt" }
 data-store = { module = "androidx.datastore:datastore-preferences", version.ref = "dataStoreVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofitVersion" }
 retrofit-gson-moshi = { module = "com.squareup.retrofit2:converter-moshi", version.ref = "retrofitVersion" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshiKotlinCodegen" }
@@ -51,6 +56,8 @@ androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref =
 androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "roomVersion" }
 androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "roomVersion" }
 androidx-viewbinding = { group = "androidx.databinding", name = "viewbinding", version.ref = "viewbinding" }
+androidx-lifecycle-runtime-android = { group = "androidx.lifecycle", name = "lifecycle-runtime-android", version.ref = "lifecycleRuntimeAndroid" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gsonVersion" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

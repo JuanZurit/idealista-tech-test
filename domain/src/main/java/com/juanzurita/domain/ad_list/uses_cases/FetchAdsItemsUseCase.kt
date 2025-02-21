@@ -6,5 +6,5 @@ import javax.inject.Inject
 class FetchAdsItemsUseCase @Inject constructor(
     private val adsRepository: AdsRepository
 ) {
-    suspend operator fun invoke() = adsRepository.fetchAdsList()
+    suspend operator fun invoke(isFavorite:Boolean) = adsRepository.fetchAdsList(isFavorite)
 }

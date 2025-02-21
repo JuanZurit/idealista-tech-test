@@ -22,5 +22,6 @@ data class AdItem(
     val longitude: Float? = null,
     val description: String? = null,
     val multimedia: Multimedia?= null,
-    val features:Map<String,Boolean>? = null
+    val features:Map<String,Boolean>? = null,
+    val isFavorite:Boolean=false
 )

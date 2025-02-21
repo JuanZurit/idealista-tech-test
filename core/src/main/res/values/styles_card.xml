@@ -2,36 +2,36 @@
 <resources>
 
     <!-- Base CardView -->
-    <style name="Widget.Besoccer.CardView.Base" parent="Widget.MaterialComponents.CardView">
+    <style name="Material.CardView.Base" parent="Widget.Material3.CardView.Filled">
         <item name="shapeAppearanceOverlay">?shapeAppearanceNone</item>
-        <item name="cardBackgroundColor">?backgroundCardColor</item>
-
+        <item name="cardBackgroundColor">@color/backgroundCardColor</item>
     </style>
 
     <!-- Styles -->
-    <style name="Widget.Besoccer.CardView.Full" parent="Widget.Besoccer.CardView.Base">
+    <style name="Material.CardView.Full" parent="Material.CardView.Base">
         <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponent</item>
+        <item name="cardElevation">?elevationLarge</item>
     </style>
 
-    <style name="Widget.Besoccer.CardView.Top" parent="Widget.Besoccer.CardView.Base">
+    <style name="Material.CardView.Top" parent="Material.CardView.Base">
         <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentTop</item>
     </style>
 
-    <style name="Widget.Besoccer.CardView.Bottom" parent="Widget.Besoccer.CardView.Base">
+    <style name="Material.CardView.Bottom" parent="Material.CardView.Base">
         <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
         <item name="cardElevation">?elevationSmall</item>
     </style>
 
-    <style name="Widget.Besoccer.CardView.Bottom.Left" parent="Widget.Besoccer.CardView.Base">
+    <style name="Material.CardView.Bottom.Left" parent="Material.CardView.Base">
         <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
         <item name="cardElevation">?elevationSmall</item>
     </style>
 
-    <style name="Widget.Besoccer.CardView.Bottom.Right" parent="Widget.Besoccer.CardView.Base">
+    <style name="Material.CardView.Bottom.Right" parent="Material.CardView.Base">
         <item name="shapeAppearanceOverlay">?shapeAppearanceSmallComponentBottom</item>
         <item name="cardElevation">?elevationSmall</item>
     </style>
 
-    <style name="Widget.Besoccer.CardView.None" parent="Widget.Besoccer.CardView.Base" />
+    <style name="Material.CardView.None" parent="Material.CardView.Base" />
 
 </resources>

@@ -19,13 +19,15 @@
         <!-- Nuevo color para el contenedor -->
         <item name="colorSurfaceContainer">@color/surfaceContainerColor</item>
 
-        <item name="android:windowBackground">@color/surfaceColor</item>
+        <item name="android:windowBackground">@color/onPrimaryColor</item>
         <item name="android:textColorPrimary">@color/primaryTextColor</item>
         <item name="android:textColorSecondary">@color/secondaryTextColor</item>
 
         <item name="android:statusBarColor">@android:color/transparent</item>
 
         <item name="android:navigationBarColor">@color/primaryColor</item>
+
+        <item name="materialCardViewStyle">@style/Material.CardView.Base</item>
 
         <!-- Elevation -->
         <item name="elevationSmall">@dimen/elevation_s</item>

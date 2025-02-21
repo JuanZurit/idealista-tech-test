@@ -7,8 +7,8 @@
     <color name="secondaryColor">#E0E0E0</color>
     <color name="secondaryColorLight">#BDBDBD</color>
     <color name="secondaryColorDark">#9E9E9E</color> <!-- Para el modo oscuro, puedes usar un tono más oscuro -->
-    <color name="backgroundColor">#FFFFFF</color>
-    <color name="surfaceColor">#FFFFFF</color>
+    <color name="backgroundCardColor">#FFFFFF</color>
+    <color name="surfaceColor">#F4F3F3</color>
     <color name="primaryTextColor">#212121</color> <!-- Texto principal, negro -->
     <color name="secondaryTextColor">#757575</color> <!-- Texto secundario, gris -->
 

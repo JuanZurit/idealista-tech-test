@@ -28,11 +28,14 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+    api(libs.androidx.viewbinding)
+    implementation(libs.androidx.lifecycle.runtime.android)
     //hilt
     api(libs.hilt.android)
-    api(libs.androidx.viewbinding)
     ksp(libs.hilt.android.compiler)
     ksp(libs.hilt.compiler)
+    //Glide
+    implementation(libs.glide)
     // Retrofit
     implementation(libs.retrofit)
     // DataStore

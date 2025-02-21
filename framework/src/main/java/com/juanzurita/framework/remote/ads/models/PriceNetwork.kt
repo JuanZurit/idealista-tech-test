@@ -5,10 +5,10 @@ import com.juanzurita.framework.remote.NetworkDTO
 
 data class PriceNetwork(
     val amount: Float? = null,
-    val currency: String? = null,
+    val currencySuffix: String? = null,
 ) : NetworkDTO<Price>() {
     override fun convert() = Price(
         amount = amount,
-        currency = currency
+        currency = currencySuffix
     )
 }

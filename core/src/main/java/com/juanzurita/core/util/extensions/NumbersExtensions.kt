@@ -2,7 +2,10 @@ package com.juanzurita.core.util.extensions
 
 import java.math.BigDecimal
 import java.math.RoundingMode
-
+import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
+import java.util.Locale
+import kotlin.math.abs
 
 
 fun Int?.orValue(num: Int) = this ?: num
@@ -22,3 +25,11 @@ fun Double?.removeZeroDecimal(): String {
     }
     return this.toString()
 }
+
+fun Float.formatWithSeparators(): String {
+    val symbols = DecimalFormatSymbols(Locale.US).apply {
+        groupingSeparator = '.'
+        decimalSeparator = ','
+    }
+    val formatter = DecimalFormat("#,##0.##", symbols)
+    return formatter.format(this)}

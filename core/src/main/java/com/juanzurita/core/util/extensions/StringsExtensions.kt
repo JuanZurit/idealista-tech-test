@@ -32,3 +32,7 @@ fun String?.floatValue(default: Float = 0f): Float {
     }
 }
 
+fun String.capitalizeFirstLetter(): String {
+    return this.replaceFirstChar { it.uppercase() }
+}
+
