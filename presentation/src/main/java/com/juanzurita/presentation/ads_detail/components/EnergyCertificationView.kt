@@ -18,7 +18,7 @@ fun EnergyCertificationView(
     energyCertification: AdEnergyCertification,
     modifier: Modifier = Modifier
 ) {
-    Column(modifier = modifier.padding(Dimens.Spacing.small)) {
+    Column(modifier = modifier.padding(Dimens.Spacing.extraSmall)) {
         Text(
             text = stringResource(R.string.energy_certification_title),
             style = MaterialTheme.typography.labelLarge

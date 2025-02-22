@@ -22,6 +22,7 @@ import com.juanzurita.core.util.extensions.doubleValue
 import com.juanzurita.presentation.R
 import com.juanzurita.presentation.ads_detail.ui.theme.Dimens
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.padding
 import com.google.android.gms.maps.model.CameraPosition
 import com.juanzurita.domain.ad_list.models.AdDetail
 
@@ -30,7 +31,7 @@ fun MapSection(adDetail: AdDetail?, mapState: MapState) {
     adDetail?.ubication?.let { location ->
         location["latitude"]?.let { lat ->
             location["longitude"]?.let { long ->
-                Spacer(modifier = Modifier.height(Dimens.Spacing.large))
+                Spacer(modifier = Modifier.height(Dimens.Spacing.large).padding(horizontal = Dimens.Spacing.extraSmall))
                 MapCard(
                     latitude = lat,
                     longitude = long,

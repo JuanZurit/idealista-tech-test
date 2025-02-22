@@ -18,7 +18,7 @@ fun MoreCharacteristicsView(
     characteristics: AdMoreCharacteristics,
     modifier: Modifier = Modifier
 ) {
-    Column(modifier = modifier.padding(Dimens.Spacing.small)) {
+    Column(modifier = modifier.padding(Dimens.Spacing.extraSmall)) {
         Text(
             text = stringResource(R.string.more_characteristics_title),
             style = MaterialTheme.typography.labelLarge
