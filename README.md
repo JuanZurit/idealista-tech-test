@@ -14,7 +14,6 @@
 - **Detalle de propiedad** con información ampliada.
 - **Pull-to-refresh** para actualizar datos en tiempo real.
 - **Manejo de errores** con estados visuales (carga, éxito, error).
-- **Búsqueda y filtrado** (opcional, si implementado).
 - **100% Kotlin** + Coroutines para operaciones asíncronas.
 
 ## 🛠 Tecnologías y Librerías
