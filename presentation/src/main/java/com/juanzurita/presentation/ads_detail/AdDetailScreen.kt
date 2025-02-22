@@ -9,11 +9,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.input.nestedscroll.nestedScroll
-import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.input.nestedscroll.NestedScrollConnection
-import androidx.compose.ui.input.nestedscroll.NestedScrollSource
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.res.stringResource
@@ -29,11 +25,11 @@ import com.juanzurita.presentation.ads_detail.components.Toolbar
 @Composable
 fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = hiltViewModel()) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-
+    val configuration = LocalConfiguration.current
     val imageUrls = uiState.carouselImages
     val backDispatcher = LocalOnBackPressedDispatcherOwner.current?.onBackPressedDispatcher
     val pagerState = rememberPagerState(initialPage = 0, pageCount = { imageUrls.size })
-    val (nestedScrollConnection, scrollProgress, isCollapsed) = rememberScrollState()
+    val isCollapsed = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
     val cutoutPadding = WindowInsets.displayCutout.asPaddingValues()
     val systemBarPadding = WindowInsets.systemBars.asPaddingValues()
 
@@ -55,14 +51,13 @@ fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = 
             modifier = Modifier
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.background)
-                .nestedScroll(nestedScrollConnection)
         ) {
             if (!isCollapsed) {
                 ImageCarousel(
                     pagerState = pagerState,
                     imageUrls = imageUrls,
                     onBackPressed = { backDispatcher?.onBackPressed() },
-                    height = (scrollProgress * MAX_SCROLL_OFFSET).dp,
+                    height = 270.dp
                 )
             } else {
                 Toolbar(
@@ -79,34 +74,3 @@ fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = 
         }
     }
 }
-
-@Composable
-fun rememberScrollState(): ScrollState {
-    val maxScrollOffsetPx = MAX_SCROLL_OFFSET
-    val scrollOffset = remember { mutableFloatStateOf(maxScrollOffsetPx) }
-    val scrollProgress = (scrollOffset.floatValue / maxScrollOffsetPx).coerceIn(0f, 1f)
-    val configuration = LocalConfiguration.current
-    val nestedScrollConnection = remember {
-        object : NestedScrollConnection {
-            override fun onPreScroll(available: Offset, source: NestedScrollSource): Offset {
-                val delta = available.y * 0.8f
-                val newOffset = (scrollOffset.floatValue + delta).coerceIn(0f, maxScrollOffsetPx)
-                val consumed = newOffset - scrollOffset.floatValue
-                scrollOffset.floatValue = newOffset
-                return Offset(x = 0f, y = consumed)
-            }
-        }
-    }
-
-    val isCollapsed =
-        scrollProgress <= 0.2f || configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
-    return ScrollState(nestedScrollConnection, scrollProgress, isCollapsed)
-}
-
-data class ScrollState(
-    val nestedScrollConnection: NestedScrollConnection,
-    val scrollProgress: Float,
-    val isCollapsed: Boolean
-)
-
-const val MAX_SCROLL_OFFSET = 350f
