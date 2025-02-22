@@ -17,6 +17,11 @@ object Constants {
         companion object{
             const val IS_FAVORITE = "isFavorite"
         }
+    }
 
+    interface URL{
+        companion object{
+            const val NO_PHOTO = "https://cdn1.polaris.com/globalassets/pga/accessories/my20-orv-images/no_image_available6.jpg?v=71397d75&format=webp&height=800"
+        }
     }
 }

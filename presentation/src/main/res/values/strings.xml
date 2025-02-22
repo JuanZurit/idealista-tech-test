@@ -3,4 +3,19 @@
     <string name="price_format">%1$s %2$s</string>
     <string name="no_favorite_data">No hay favoritos</string>
     <string name="no_data">No hay datos</string>
+    <string name="title_activity_ads_detail">AdsDetailActivity</string>
+    <string name="google_maps_key">AIzaSyCCSS4UR16zzRt-J-3bqX25OLRITlsGSvA</string>
+    <string name="map_marker_title">Ubicación del Anuncio</string>
+    <string name="more_characteristics_title">Más características</string>
+    <string name="rooms_label">Habitaciones</string>
+    <string name="bathrooms_label">Baños</string>
+    <string name="built_area_label">Superficie construida</string>
+    <string name="energy_certification_label">Certificación energética</string>
+    <string name="community_costs_label">Costos de comunidad</string>
+    <string name="ad_details_title">Detalles del anuncio</string>
+    <string name="energy_certification_title">Certificación energética</string>
+    <string name="energy_type_label">Tipo</string>
+    <string name="emissions_label">Emisiones</string>
+    <string name="google_maps_title">Google Maps</string>
+    <string name="tap_for_navigation">Toca para abrir en la aplicación de Maps</string>
 </resources>

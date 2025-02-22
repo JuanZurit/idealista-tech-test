@@ -5,6 +5,7 @@ import com.juanzurita.core.domain.models.Error
 import com.juanzurita.core.framework.managers.DispatcherProvider
 import com.juanzurita.core.util.extensions.tryCall
 import com.juanzurita.data.ads.datasources.AdsRemoteDataSource
+import com.juanzurita.domain.ad_list.models.AdDetail
 import com.juanzurita.domain.ad_list.models.AdItem
 import com.juanzurita.framework.remote.ApiEndpoints
 import kotlinx.coroutines.withContext
@@ -20,4 +21,12 @@ class AdsRemoteDataSourceImpl @Inject constructor(
             apiEndpoints.fetchAdList().map { it.convert() }
         }
     }
+
+    override suspend fun fetchAdDetail(): Either<Error, AdDetail> = withContext(dispatcherProvider.io){
+        tryCall{
+            apiEndpoints.fetchAdDetail().convert()
+        }
+    }
+
+
 }

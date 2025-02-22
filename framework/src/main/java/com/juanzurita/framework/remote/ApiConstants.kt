@@ -11,5 +11,6 @@ object ApiConstants {
 
     object Paths {
         const val AD_LIST = "list.json"
+        const val AD_DETAIL = "detail.json"
     }
 }

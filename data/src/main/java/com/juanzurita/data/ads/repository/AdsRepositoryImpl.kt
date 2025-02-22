@@ -1,8 +1,11 @@
 package com.juanzurita.data.ads.repository
 
 import android.util.Log
+import arrow.core.Either
+import com.juanzurita.core.domain.models.Error
 import com.juanzurita.data.ads.datasources.AdsLocalDataSource
 import com.juanzurita.data.ads.datasources.AdsRemoteDataSource
+import com.juanzurita.domain.ad_list.models.AdDetail
 import com.juanzurita.domain.ad_list.models.AdItem
 import com.juanzurita.domain.ad_list.repository.AdsRepository
 import kotlinx.coroutines.flow.Flow
@@ -28,6 +31,8 @@ class AdsRepositoryImpl @Inject constructor(
     override suspend fun updateFavoriteAdsList(propertyCode: String, isFavorite: Boolean): Boolean {
         return adsLocalDataSource.updateFavoriteStatus(propertyCode, isFavorite)
     }
+
+    override suspend fun fetchAdDetail(): Either<Error, AdDetail> =  adsRemoteDataSource.fetchAdDetail()
 
     private suspend fun fetchAdListFromRemote(): List<AdItem> {
         val result = adsRemoteDataSource.fetchAdsList().fold(
