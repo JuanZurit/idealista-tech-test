@@ -1,5 +1,6 @@
 package com.juanzurita.presentation.ads_detail.components
 
+import android.icu.util.Currency
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -23,7 +24,9 @@ fun RoomAndBathroomAndPriceSection(
 ) {
     Spacer(modifier = Modifier.height(Dimens.Spacing.medium))
     Row(
-        modifier = modifier.fillMaxWidth().padding(horizontal = Dimens.Spacing.extraSmall),
+        modifier = modifier
+            .fillMaxWidth()
+            .padding(horizontal = Dimens.Spacing.extraSmall),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
@@ -47,7 +50,11 @@ fun RoomAndBathroomAndPriceSection(
             }
         }
 
-        PriceSection(price = adDetail.price, modifier = modifier)
+        PriceSection(
+            price = adDetail.price,
+            currency = adDetail.priceInfo?.currency,
+            modifier = modifier
+        )
     }
 }
 
@@ -65,9 +72,9 @@ fun RoomOrBathroomInfo(icon: ImageVector, number: Int, modifier: Modifier = Modi
 
 
 @Composable
-fun PriceSection(price: Float?, modifier: Modifier = Modifier) {
+fun PriceSection(price: Float?, currency: String?, modifier: Modifier = Modifier) {
     Text(
-        text = "$${price?.formatWithSeparators()}",
+        text = "${price?.formatWithSeparators()} ${if (!currency.isNullOrEmpty()) currency else ""}",
         fontSize = 18.sp,
         fontWeight = FontWeight.Bold,
         textAlign = TextAlign.Center,
