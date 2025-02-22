@@ -23,7 +23,7 @@ fun RoomAndBathroomAndPriceSection(
 ) {
     Spacer(modifier = Modifier.height(Dimens.Spacing.medium))
     Row(
-        modifier = modifier.fillMaxWidth(),
+        modifier = modifier.fillMaxWidth().padding(horizontal = Dimens.Spacing.extraSmall),
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
