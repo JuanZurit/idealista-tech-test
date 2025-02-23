@@ -7,8 +7,6 @@
     <color name="secondaryColor">#424242</color>
     <color name="secondaryColorLight">#616161</color>
     <color name="secondaryColorDark">#9E9E9E</color>
-    <color name="greyLight">#BDBDBD</color>
-    <color name="backgroundColor">#121212</color> <!-- Fondo oscuro -->
     <color name="surfaceColor">#333333</color> <!-- Fondo para elementos secundarios -->
     <color name="primaryTextColor">#FFFFFF</color> <!-- Texto principal, blanco -->
     <color name="secondaryTextColor">#BDBDBD</color> <!-- Texto secundario, gris claro -->
@@ -23,5 +21,6 @@
     <color name="onSurfaceVariant">#BDBDBD</color> <!-- Texto sobre elementos 'surfaceVariant' -->
 
     <color name="surfaceContainerColor">#424242</color> <!-- Fondo para contenedores secundarios -->
+    <color name="backgroundCardColor">@color/surfaceContainerColor</color>
 
 </resources>
