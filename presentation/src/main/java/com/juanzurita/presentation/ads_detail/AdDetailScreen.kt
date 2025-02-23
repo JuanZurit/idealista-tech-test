@@ -4,8 +4,8 @@ import androidx.activity.compose.LocalOnBackPressedDispatcherOwner
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.foundation.pager.rememberPagerState
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment.Companion.Center
@@ -23,7 +23,6 @@ import com.juanzurita.presentation.ads_detail.components.ImageCarousel
 import com.juanzurita.presentation.ads_detail.components.LoadingView
 import com.juanzurita.presentation.ads_detail.components.NoDataView
 import com.juanzurita.presentation.ads_detail.components.Toolbar
-import kotlin.math.min
 
 @Composable
 fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = hiltViewModel()) {
@@ -33,12 +32,10 @@ fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = 
     val pagerState = rememberPagerState(initialPage = 0, pageCount = { imageUrls.size })
     val cutoutPadding = WindowInsets.displayCutout.asPaddingValues()
     val systemBarPadding = WindowInsets.systemBars.asPaddingValues()
-    val lazyListState = rememberLazyListState()
+    val scrollState = rememberScrollState()
     val scrollOffset by remember {
         derivedStateOf {
-            val indexOffset = lazyListState.firstVisibleItemIndex.toFloat()
-            val itemScrollOffset = lazyListState.firstVisibleItemScrollOffset / 200f
-            (1 - (itemScrollOffset + indexOffset)).coerceIn(0f, 1f)
+            (1 - (scrollState.value / 200f)).coerceIn(0f, 1f)
         }
     }
 
@@ -81,7 +78,7 @@ fun AdDetailScreen(innerPadding: PaddingValues, viewModel: AdsDetailViewModel = 
             else if (uiState.noData) NoDataView()
             else AdDetailsContent(
                 adDetail = uiState.adDetail,
-                lazyListState = lazyListState,
+                scrollState=scrollState,
                 modifier = Modifier.padding(bottom = cutoutPadding.calculateBottomPadding() + systemBarPadding.calculateBottomPadding())
             )
         }
