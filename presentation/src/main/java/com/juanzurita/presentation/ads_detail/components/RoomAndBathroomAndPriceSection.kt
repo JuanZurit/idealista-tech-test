@@ -1,6 +1,5 @@
 package com.juanzurita.presentation.ads_detail.components
 
-import android.icu.util.Currency
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable

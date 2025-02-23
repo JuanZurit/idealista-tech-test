@@ -2,6 +2,7 @@ package com.juanzurita.presentation.ads_detail.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -11,11 +12,13 @@ import com.juanzurita.presentation.ads_detail.ui.theme.Dimens
 @Composable
 fun AdDetailsContent(
     adDetail: AdDetail?,
+    lazyListState: LazyListState,
     modifier: Modifier = Modifier
 ) {
     val mapState = rememberMapState(adDetail?.ubication)
 
     LazyColumn(
+        state = lazyListState,
         modifier = modifier
             .fillMaxSize()
             .padding(horizontal = Dimens.Spacing.medium)

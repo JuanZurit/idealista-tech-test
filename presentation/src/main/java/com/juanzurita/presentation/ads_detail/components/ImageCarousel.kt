@@ -26,18 +26,20 @@ fun ImageCarousel(
     onBackPressed: () -> Unit,
     height: Dp) {
 
+    if(height>=100.dp) {
 
-    Box(modifier = Modifier.fillMaxWidth().height(height)) {
-        HorizontalPager(state = pagerState, modifier = Modifier.fillMaxSize()) { page ->
-            Image(
-                painter = rememberAsyncImagePainter(imageUrls[page]),
-                contentDescription = "Imagen de la propiedad",
-                contentScale = ContentScale.Crop,
-                modifier = Modifier.fillMaxSize()
-            )
+        Box(modifier = Modifier.fillMaxWidth().height(height)) {
+            HorizontalPager(state = pagerState, modifier = Modifier.fillMaxSize()) { page ->
+                Image(
+                    painter = rememberAsyncImagePainter(imageUrls[page]),
+                    contentDescription = "Imagen de la propiedad",
+                    contentScale = ContentScale.Crop,
+                    modifier = Modifier.fillMaxSize()
+                )
+            }
+
+            BackButton(onBackPressed)
         }
-
-        BackButton(onBackPressed)
     }
 }
 
