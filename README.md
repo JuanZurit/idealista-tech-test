@@ -10,7 +10,7 @@
 </p>
 
 ## 🚀 Funcionalidades Principales
-- **Listado de propiedades** desde la [API Mock de Idealista](https://run.mocky.io/v3/93a5e3c2-4c3e-4d3e-8f3a-5e3c2d3e4f3a).
+- **Listado de propiedades** desde la API Mock de Idealista.
 - **Detalle de propiedad** con información ampliada.
 - **Pull-to-refresh** para actualizar datos en tiempo real.
 - **Manejo de errores** con estados visuales (carga, éxito, error).
